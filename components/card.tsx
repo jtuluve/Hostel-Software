@@ -16,7 +16,7 @@ type CardProps = PropsWithChildren & {
 
 
 type ChildrenProps = {
-  className: string
+  className?: string
 }
 
 let cardContext = createContext<CardProps | undefined>(undefined);
@@ -51,10 +51,10 @@ Card.UserDescription = function UserDescription({className}:ChildrenProps) {
   console.log(className)
   const { prop } = cardContextValue();
   return(
-    <div>
-        <p className={`text-lg font-semibold text-[#8b8274] ${className}`} >{prop.name}</p>
-        <p className={`text-sm text-[#8b8274] ${className}`}>{prop.year}</p>
-        <p className={`text-sm text-[#8b8274] ${className}`}>{prop.id}</p>
+    <div className={className}>
+        <p className={`text-lg font-semibold text-[#8b8274] `} >{prop.name}</p>
+        <p className={`text-sm text-[#8b8274] `}>{prop.year}</p>
+        <p className={`text-sm text-[#8b8274] `}>{prop.id}</p>
       </div>
   )
 }
@@ -63,8 +63,8 @@ Card.UserDescription = function UserDescription({className}:ChildrenProps) {
 Card.UserReason = function UserReason({className}:ChildrenProps) {
   const { prop } = cardContextValue();
   return(
-    <div className="text-center">
-        <p className={`text-lg font-medium text-[#8b8274] ${className}`}>{prop.reason}</p>
+    <div className={`text-center ${className}`}>
+        <p className={`text-lg font-medium text-[#8b8274] `}>{prop.reason}</p>
     </div>
   )
 }
@@ -79,10 +79,10 @@ Card.UserLeaveDate = function UserLeaveDate({className}:ChildrenProps) {
     });
   };
   return(
-    <div className="text-right">
-        <span className={`text-sm text-[#8b8274] ${className}`}>{formatDate(prop.startDate)}</span>
-        <span className={`text-sm text-[#8b8274] text-center px-5 ${className}`}>-</span>
-        <span className={`text-sm text-[#8b8274] ${className}`}>{formatDate(prop.endDate)}</span>
+    <div className={` text-center text-sm text-[#8b8274] w-min ${className}`}>
+        {formatDate(prop.startDate)}
+         {" - "}
+        {formatDate(prop.endDate)}
       </div>
   )
 }

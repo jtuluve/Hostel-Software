@@ -15,9 +15,9 @@ export default function TestPage() {
             }}
         >     
             <Card.Details>
-                <Card.UserDescription className={""}/>
-                <Card.UserReason className={""}/>
-                <Card.UserLeaveDate className={""}/>
+                <Card.UserDescription />
+                <Card.UserReason className="flex-grow"/>
+                <Card.UserLeaveDate />
             </Card.Details>
             <Card.HorizontalButtons/>
         </Card>
