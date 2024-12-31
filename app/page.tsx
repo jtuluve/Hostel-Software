@@ -1,6 +1,6 @@
 'use client'
 import "@/styles/style.css";
-import Template from "./template";
+import Template from "./templates";
 import {auth, signOut} from '@/auth'
 import { useEffect } from "react";
 import {useSession} from "next-auth/react"
