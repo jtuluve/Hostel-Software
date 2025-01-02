@@ -1,0 +1,135 @@
+.{}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  .container {
+    display: flex;
+    flex-direction: row; 
+    gap: 20px; 
+    width: 100%;
+    max-width: 1200px;
+  }
+  .profile-section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1; 
+  }
+  .profile-section .image-placeholder {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    background-color: #df6bac;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
+  .profile-section .circle {
+    position: absolute;
+    bottom: -20px;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border: 3px solid #ddd;
+    border-radius: 50%;
+  }
+  .profile-section h3 {
+    margin-top: 40px;
+    font-size: 1.2rem;
+  }
+  .profile-section p {
+    margin: 5px 0;
+    color: gray;
+    font-size: 0.9rem;
+  }
+  .leave-section {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    flex: 3; 
+  }
+  .leave-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .apply-button {
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .apply-button:hover {
+    background-color: darkorange;
+  }
+  .row-container {
+    margin-bottom: 15px; 
+    padding: 15px;
+    border-radius: 10px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+  }
+  .row-accepted {
+    background-color: #d7f7d7; 
+  }
+  .row-requested {
+    background-color: #fff4d7; 
+  }
+  .row-rejected {
+    background-color: #f7d7d7; 
+  }
+  .status-container {
+    text-align: center;
+  }
+  .status-symbol {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .status-accepted {
+    background-color: green;
+  }
+  .status-requested {
+    background-color: orange;
+  }
+  .status-rejected {
+    background-color: red;
+  }
+  .status-text {
+    font-size: 0.8rem;
+    color: gray;
+    margin-top: 5px;
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; 
+    }
+    .profile-section,
+    .leave-section {
+      width: 100%; 
+    }
+  }

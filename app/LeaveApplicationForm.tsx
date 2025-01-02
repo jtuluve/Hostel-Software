@@ -18,7 +18,6 @@ const LeaveApplicationForm: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form Submitted:", formData);
     // Add logic to submit data to the backend here
   };
 

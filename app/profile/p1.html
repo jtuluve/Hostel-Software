@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leave History</title>
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+    .container {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+
+    /* Profile Section */
+    .profile-section {
+      width: 40%;
+      background-color: #f7f7f7;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .profile-section .image-placeholder {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      margin: 0 auto;
+      background-color: pink;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .profile-section .circle {
+      position: absolute;
+      bottom: -20px;
+      width: 80px;
+      height: 80px;
+      background-color: white;
+      border: 3px solid #ddd;
+      border-radius: 50%;
+    }
+    .profile-section h3 {
+      margin-top: 40px;
+      font-size: 1.2rem;
+    }
+    .profile-section p {
+      margin: 5px 0;
+      color: gray;
+      font-size: 0.9rem;
+    }
+
+    /* Leave History Section */
+    .leave-section {
+        top: -50px;
+      width: 55%;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    .leave-section h2 {
+      margin-bottom: 20px;
+    }
+    .apply-container {
+      text-align: right;
+      margin-bottom: 10px;
+    }
+    .leave-section table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .leave-section table th,
+    .leave-section table td {
+      border: 1px solid #dddddd00;
+      padding: 10px;
+      text-align: center;
+    }
+    .leave-section table th {
+      background-color: #f1f1f100;
+    }
+
+    /* Symbol Styles for Status */
+    .status-symbol {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0 auto;
+    }
+    .status-accepted {
+      background-color: green;
+      border-image-repeat: black;
+      
+    }
+    .status-requested {
+      background-color: orange;
+    }
+    .status-rejected {
+      background-color: red;
+    }
+
+    /* Apply Button Styling */
+    .apply-button {
+      padding: 10px 20px;
+      background-color: orange;
+      border: none;
+      border-radius: 20px;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .apply-button:hover {
+      background-color: darkorange;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Profile Section -->
+    <div class="profile-section">
+      <div class="image-placeholder">
+        <div class="circle"></div>
+      </div>
+      <h3>John</h3>
+      <p>4JK23AB110</p>
+    </div>
+
+    <!-- Leave History Section -->
+    <div class="leave-section">
+      <h2>Leave History<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td><button class="apply-button">Apply Leave</button></h2>
+
+
+      <!-- Apply Leave Button Above the Table -->
+
+      <!-- Leave History Table -->
+      <div>
+        <table>
+          
+            <td>Home visit&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>22/12/2024--25/12/2024&nbsp;&nbsp;&nbsp;&nbsp;<div class="status-symbol status-accepted"></div></td>
+            
+          
+        </table>
+    </div>
+    
+    <div>
+          <table>
+          <tr>
+            <td>Home visit&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>22/12/2024--25/12/2024&nbsp;&nbsp;&nbsp;&nbsp;<div class="status-symbol status-requested"></div></td>
+            
+          </tr>
+        </table>
+       </div>
+       <div>
+        <table>
+          <tr>
+            <td>Home visit&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>22/12/2024--25/12/2024&nbsp;&nbsp;&nbsp;&nbsp;<div class="status-symbol status-rejected"></div></td>
+            
+          </tr>
+        
+    </table>
+       </div>
+    </div>
+  </div>
+
+</body>
+</html>
